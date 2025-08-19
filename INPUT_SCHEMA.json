@@ -1,0 +1,59 @@
+{
+  "title": "Coldwell Banker JAX Agents \u2192 Brevo CSV",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "startUrl": {
+      "title": "Directory start URL",
+      "type": "string",
+      "default": "https://www.coldwellbanker.com/city/fl/jacksonville/agents",
+      "description": "Coldwell Banker city directory URL (first page)."
+    },
+    "maxPages": {
+      "title": "Max pages to paginate",
+      "type": "integer",
+      "minimum": 1,
+      "default": 50
+    },
+    "maxProfiles": {
+      "title": "Max profiles to process",
+      "type": "integer",
+      "minimum": 1,
+      "default": 2000
+    },
+    "concurrency": {
+      "title": "Concurrent browsers",
+      "type": "integer",
+      "minimum": 1,
+      "default": 5
+    },
+    "perDomainDelayMs": {
+      "title": "Delay per domain (ms)",
+      "type": "integer",
+      "minimum": 0,
+      "default": 1000,
+      "description": "Politeness delay before requests to the same domain."
+    },
+    "followOffsiteMax": {
+      "title": "Max offsite links per profile",
+      "type": "integer",
+      "minimum": 0,
+      "default": 5,
+      "description": "How many website/social links to open per agent to hunt emails."
+    },
+    "preferDomain": {
+      "title": "Prefer email domain (optional)",
+      "type": "string",
+      "default": "@cbvfl.com",
+      "description": "If multiple emails found, prefer this domain (e.g., @cbvfl.com)."
+    },
+    "listTag": {
+      "title": "Brevo List tag",
+      "type": "string",
+      "default": "Coldwell Banker JAX Agents"
+    }
+  },
+  "required": [
+    "startUrl"
+  ]
+}

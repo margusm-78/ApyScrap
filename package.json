@@ -1,0 +1,14 @@
+{
+  "name": "cb-jax-agents-to-brevo",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Scrape Coldwell Banker Jacksonville agents; follow websites/socials to find emails; export Brevo-ready CSV.",
+  "dependencies": {
+    "apify": "^3.1.6",
+    "crawlee": "^3.6.2",
+    "got-scraping": "^4.0.5"
+  },
+  "scripts": {
+    "start": "node src/main.js"
+  }
+}

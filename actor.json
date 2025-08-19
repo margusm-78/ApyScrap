@@ -1,0 +1,10 @@
+{
+  "actorSpecification": 1,
+  "name": "cb-jax-agents-to-brevo",
+  "title": "Coldwell Banker JAX agents \u2192 Brevo CSV",
+  "description": "Crawls ColdwellBanker.com Jacksonville agents, visits website/social links to extract emails, and outputs a Brevo-ready dataset.",
+  "version": "1.0",
+  "buildTag": "latest",
+  "dockerfile": "Dockerfile",
+  "input": "./INPUT_SCHEMA.json"
+}
